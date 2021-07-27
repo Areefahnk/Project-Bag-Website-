@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px 30px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 0;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+/* Style the counter cards */
+.card {
+ box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #f1f1f1;
+  padding: 10px 5px;
+  width:60%;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+   body {
+      margin: 0;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #navbar{
+        padding: 55px 16px;
+        background: #555;
+        color: #f1f1f1;
+      }
+
+    #navbar a {
+      float: right;
+      position:relative;
+      top:-10px;
+      left:-100px;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding:1px 3px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    @media screen and (max-width: 500px) {
+      #navbar a {
+      float: right;
+      position:relative;
+      top:-15px;
+      left:-3px;
+    }
+   }
+    #pb{
+      float:left;
+      position:relative;
+      top:-60px;
+      font-family: Itallic;
+    }
+
+  #il{
+    text-decoration: none; 
+    text-shadow: 20px;
+    font-weight: 60px;
+    font-size: 20px;
+  }
+  #cou{
+      position:relative;
+      left: -300px;
+  }
+  #pb{
+      float:left;
+      position:relative;
+      top:-60px;
+      font-family: Castellar;
+    }
+</style>
+</head>
+<body>
+<div id="navbar">
+  <h2 id="pb">Project Bag</h2>
+  <a href="http://www.srecwarangal.ac.in/" target="_blank" >SREC</a>
+</div>
+<div class="content">
+
+<h3 id="cou">Courses</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="fpd1.html"><img  src="fpd.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="fpd1.html">FPD</a></b></h3>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="ethics1.html"><img  src="ethics.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="ethics1.html">ETHICS</a></b></h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="page786.html"><img  src="pds.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="page786.html">PDS</a></b></h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="mech1.html"><img  src="mechatronics.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="mech1.html">Mechatronics</a></b></h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card" id="x">
+      <a href="ssd1.html"><img  src="ssd.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="ssd1.html">SSD</a></b></h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="mini1.html"><img  src="mini.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="mini1.html">Mini Projects</a></b></h3>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="major1.html"><img  src="major.jpg" alt="fpd" style="width:80%"></a>
+      <h3><b><a id="il" href="major1.html">Major Projects</a></b></h3>
+    </div>
+  </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

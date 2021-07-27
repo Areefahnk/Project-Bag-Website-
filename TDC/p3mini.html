@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="tryst.css">
+<style>
+   body {
+      margin: 0;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #navbar{
+        padding: 55px 16px;
+        background: #555;
+        color: #f1f1f1;
+      }
+
+    #navbar a {
+      float: right;
+      position:relative;
+      top:-10px;
+      left:-100px;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding:1px 3px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky + .content {
+      padding-top: 60px;
+    }
+    #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  position:relative;
+  left:20px;
+  top:-90px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+    #pb{
+      float:left;
+      position:relative;
+      top:-60px;
+      font-family: Itallic;
+    }
+    #H1{
+      position:relative;
+      left:-330px;
+      font-family:Georgia;
+    }
+    #H2{
+      position:relative;
+      left:5px;
+    }
+    #under{
+      position:relative;
+      top:-50px;
+      left: 5px;
+    }
+    #button{
+      padding: 7px;
+      position:relative;
+      top:-82px;
+      left: 380px;
+    }
+    #H3{
+      position:relative;
+      top:-70px;
+      left:5px;
+    }
+    #H4{
+      position:relative;
+      top:30px;
+      left:5px;
+      text-decoration: underline;
+    }
+    #H5{
+      position:relative;
+      top:20px;
+      left:10px;
+      text-decoration: none;
+      text-decoration-style: solid; 
+    }
+    #name{
+      position:relative;
+      left:15px;
+    }
+    .j2{
+      display:inline;
+            position:relative;
+      top:-15px;
+      left:10px;
+      font-size: 80%;
+    }
+    #j3{
+      position:relative;
+      left:150px;
+    }
+    #no{
+      position:relative;
+      left:150px;
+    }
+    th{
+      font-size:70%;
+    }
+    td{
+      font-size:60%;
+    }
+    #team{
+      position:relative;
+      left:7px;
+      top:-100px;
+    }
+    #name{
+      position:relative;
+      left:15px;
+    }
+    #branch{
+      position:relative;
+      left:190px;
+      top:-60px;
+    }
+     #cont{
+      position:relative;
+      left:350px;
+      top:-120px;
+    }
+    #g{
+      position:relative;
+      top:-70px;
+      left:20px;
+    }
+   @media screen and (max-width: 500px) {
+    #branch{
+      position:relative;
+      left:100px;
+    }
+    #cont{
+      position:relative;
+      left:200px;
+    }
+   #H1{
+    float:left;
+    position:relative;
+    left:10px;
+    top:-70px;
+   }
+   #H2{
+    position:relative;
+    left:-2px;
+    top:-40px;
+   }
+   #button{
+    position:relative;
+    left:-0px;
+    top:-60px;
+   }
+   #H3{
+    position:relative;
+    top:-70px;
+   }
+   .column {
+  float: left;
+  width: 25%;
+  position:relative;
+  top:-90px;
+  left:5px;
+  }
+  #g{
+    position:relative;
+    left:7px;
+  }
+  #navbar a{
+    position:relative;
+    top:-14px;
+  left:17px;
+  }
+}
+#pb{
+      float:left;
+      position:relative;
+      top:-60px;
+      font-family: Castellar;
+    }
+</style>
+</head>
+<body>
+<div id="navbar">
+  <h2 id="pb">Project Bag</h2>
+  <a href="http://www.srecwarangal.ac.in/" target="_blank" >SREC</a>
+</div>
+<div class="content">
+  <h3 id="H1">Foundations for Mini Project</h3>
+  <h3 id="H2">Title</h3>
+  <button id="button">Semester 1/2</button>
+  <h3 id=H3>Project Description</h3>
+  <h3 id="H4">Team Details</h3>
+  <h4 id="H5">Mentor</h4>
+  <p id="name">Name</p>
+  <p id="branch">Branch</p>
+  <p id="cont">Contact</p>
+ </div>
+  <h4 id="team">Team Members</h4>
+  <table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Hall-ticket no.</th>
+    <th>Contact</th>
+  </tr>
+  <tr>
+    <td>Student1</td>
+    <td>18K41A0546</td>
+    <td>9773902083</td>
+  </tr>
+  <tr>
+    <td>Student2</td>
+    <td>Hall ticket no.</td>
+    <td>Contact</td>
+  </tr>
+   <tr>
+    <td>Student2</td>
+    <td>Hall ticket no.</td>
+    <td>Contact</td>
+  </tr>
+</table>
+<h3 id="g">Gallery</h3>
+<div class="container">
+  <div class="mySlides">
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div> 
+  </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
